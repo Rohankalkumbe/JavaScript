@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var data = '';
+        function ShowResult(param){
+            document.getElementById("Course").innerHTML=param;
+        }
+
+        function ShowResult1(param){
+            data = param;
+        }
+
+         function Result(){
+            document.getElementById("Course1").innerHTML=data;
+        }
+
+    </script>
+</head>
+<body>
+    <p>Choose AI Agent:</p>
+    <input type="radio" name="agent" value="Chat GPT" onchange="ShowResult(this.value)"> <label>Chat GPT</label><br>
+    <input type="radio" name="agent" value="Groc" onchange="ShowResult(this.value)"> <label>Groc</label><br>
+    <input type="radio" name="agent" value="CO-Pilot" onchange="ShowResult(this.value)"> <label>Co-Pilot</label> <br/>
+    <input type="radio" name="agent" value="Gemini" onchange="ShowResult(this.value)"> <label>Gemini</label> <br/>
+    
+    <hr>
+    <div id="Course"></div>
+
+    <hr>
+
+    <p>Choose AI Agent:</p>
+    <input type="radio" name="agent1" value="Chat GPT" onchange="ShowResult1(this.value)"> <label>Chat GPT</label><br>
+    <input type="radio" name="agent1" value="Groc" onchange="ShowResult1(this.value)"> <label>Groc</label><br>
+    <input type="radio" name="agent1" value="CO-Pilot" onchange="ShowResult1(this.value)"> <label>Co-Pilot</label> <br/>
+    <input type="radio" name="agent1" value="Gemini" onchange="ShowResult1(this.value)"> <label>Gemini</label> <br/>
+    <input type="button" value="Submit" onclick="Result()">
+    <hr>
+    <div id="Course1"></div>
+</body>
+</html>

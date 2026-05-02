@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function swap(){
+            var a = parseInt(document.getElementById("text1").value); // "2"
+            var b = parseInt(document.getElementById("text2").value); // "3"
+
+            // document.getElementById("text1").value = b;
+            // document.getElementById("text2").value = a;
+
+            a = a + b;
+            b = a - b;
+            a = a - b;
+
+            document.getElementById("text1").value = a;
+            document.getElementById("text2").value = b;
+        }
+    </script>
+
+</head>
+<body>
+    <input type="number" placeholder = "Enter First Number" id = "text1" > <br> <br>
+    <input type="number" placeholder = "Enter Second Number" id = "text2" > <br> <br>
+    <button onclick="swap()">Swap</button>
+</body>
+</html>

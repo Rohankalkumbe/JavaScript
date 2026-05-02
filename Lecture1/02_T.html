@@ -1,0 +1,34 @@
+<!-- Perform addition of two number to take two textfield and one button? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        function Message1(){
+            var a = document.getElementById("first1").value; // "2"
+            var b = document.getElementById("first2").value; // "3"
+            var result = parseInt(a) + parseInt(b);
+            alert(result);      
+        }
+        
+    </script>
+</head>
+<body>
+
+    <input type="number" placeholder = "Enter First Number" id = "first1" >
+    <br>
+    <input type="number" placeholder = "Enter Second Number" id = "first2" >
+    <br>
+
+    <!-- <input type="button" value = "Submit" onclick="Message1()" > -->
+
+    <button onclick="Message1()" >Submit1</button>
+    <br>
+    <submit onclick="Message2()" >Submit2</submit>
+</body>
+</html>
